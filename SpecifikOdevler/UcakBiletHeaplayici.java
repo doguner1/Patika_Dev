@@ -11,30 +11,30 @@ public class UcakBiletiHesaplayici {
         //** Mesafe bilgisi alınırken sadece pozitif değerleri kabul edilecek**\\
         //** Burada yanlış değer girilirse, istenilen değer girilene kadar dönecek**\\
         do {
-            System.out.print("Enter distance in km: ");
+            System.out.print("Mesafeyi km türünden giriniz : ");
             distance = input.nextInt();
             if (distance < 0) {
-                System.out.println("Invalid input!");
+                System.out.println("Hatalı Veri Girdiniz !");
             }
         } while (distance < 0);
         
         //** Yaş bilgisi alınırken sadece pozitif değerler kabul edilecek**\\
         //** Burada yanlış değer girilirse, istenilen değer girilene kadar dönecek**\\
         do {
-            System.out.print("Enter your age: ");
+            System.out.print("Yaşınızı giriniz : ");
             age = input.nextInt();
             if (age < 0) {
-                System.out.println("Invalid input!");
+                System.out.println("Hatalı Veri Girdiniz !");
             }
         } while (age < 0);
         
         //** Yolculuk tiği bilgisi alınırken 1 veya 2 değerler kabul edilecek**\\
         //** Burada yanlış değer girilirse, istenilen değer girilene kadar dönecek**\\
         do {
-            System.out.print("Enter travel type (1 for one-way, 2 for round-trip): ");
+            System.out.print("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): ");
             travelType = input.nextInt();
             if (travelType != 1 && travelType != 2) {
-                System.out.println("Invalid input!");
+                System.out.println("Hatalı Veri Girdiniz !");
             }
         } while (travelType != 1 && travelType != 2);
         
@@ -65,6 +65,6 @@ public class UcakBiletiHesaplayici {
         //** Toplam tutar hesaplanıyor**\\
         totalPrice = (discountedPrice - roundTripDiscount) * travelType;
         
-        System.out.println("Total price = " + totalPrice + " TL");
+        System.out.println("Toplam Tutar = " + totalPrice + " TL");
     }
 }
