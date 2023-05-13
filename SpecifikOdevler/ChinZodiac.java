@@ -15,7 +15,7 @@ public class ChinZodiac {
 
        //** Burada switch case kullanımı yaptık. Switch kullanımı öpğrenmek isteyenler için yeterli not**\\
        //** Kalan değeri denk gelen case bloğu çalışacak ve break komutu ile işlem sonlanacak **\\
-	   switch(raimender) {
+	   switch(remainder) {
 	   		case 0:
 	   			System.out.println("Çin Zodyağı burcunuz: Maymun");
 	   			break;
